@@ -1,0 +1,29 @@
+_id: req_89a6c20d849d4081a6500aa459487859
+type: Request
+parentId: fld_016c5c630bfd44eca3a7dcbccaaba94e
+modified: 1689290597600
+created: 1689290504494
+url: http://192.168.0.20:8080/Account/Refresh
+name: RefreshToken
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJpdC5zZXJnaGVpQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3NpZCI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXQuc2VyZ2hlaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY5MTg4MTQzNSwiaXNzIjoiaHR0cHM6Ly9leHBlbnNlc2V0dGxlci5jb20iLCJhdWQiOiJodHRwczovL2V4cGVuc2VzZXR0bGVyLmNvbSJ9.oFd8IQg5XBpv1sNTUoEAXohxxp65DsorcdCUgIJr4ME",
+      "refreshToken": "c3OfWY/ykXUJ7SWDBIpQ+ui04iGVg9Mjwgg7vZYJNY4="
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1689289682433
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

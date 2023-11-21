@@ -1,0 +1,28 @@
+_id: req_856223ac6b8540d9b96793735f1708b4
+type: Request
+parentId: fld_5f68f1e316ae4195b42efe5a764bc475
+modified: 1700584049899
+created: 1700581417252
+url: http://localhost:8080/api/console/solutions/document-definition/5fdeca6c-9898-4b66-9674-321093c5f944/field-groups
+name: DocDefFieldGroups
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_50f1eb2cd7f1427b90f61f58753e37ff
+  - id: pair_a380701548554372bf416bc6f373c410
+    name: X-NOM-GCD-UID
+    value: test
+    description: ""
+authentication: {}
+metaSortKey: -1700575876388.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

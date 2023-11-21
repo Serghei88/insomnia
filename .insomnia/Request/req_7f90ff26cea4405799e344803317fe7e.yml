@@ -1,0 +1,29 @@
+_id: req_7f90ff26cea4405799e344803317fe7e
+type: Request
+parentId: fld_016c5c630bfd44eca3a7dcbccaaba94e
+modified: 1689290326911
+created: 1689289682458
+url: http://192.168.0.20:8080/Account/Login
+name: login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "email": "it.serghei@gmail.com",
+      "password": "SomeSecurePassword123!"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1689289682458
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

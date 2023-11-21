@@ -1,0 +1,96 @@
+_id: req_a80fc6a8cb654e1c896a5c8b3ba47b1f
+type: Request
+parentId: fld_5f68f1e316ae4195b42efe5a764bc475
+modified: 1700575883992
+created: 1698521434784
+url: http://localhost:8080/api/documents/execute-validation-test-cases
+name: BUI ExecuteValidationTestCases
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"fieldExternalIds": [],
+    	"fieldGroupExternalIds": [],
+    	"snippetCode": "using System.Collections.Generic;\r\nusing System.Linq;\r\nusing Datum.Rapid.Capture.Common.DomainModel;\r\nusing Datum.Rapid.Capture.Common.DomainModel.Common;\r\nusing Datum.Rapid.Capture.Common.Extensions;\r\n\r\nnamespace LanaCustomBatchExtractor.Tests.TestCodeSnippets;\r\n\r\npublic class TestValidationFieldExtractor: ValidationFieldExtractor\r\n{\r\n    private readonly List<Field> _fields;\r\n    private List<FieldGroup> _fieldGroups;\r\n    private Dictionary<string, string> _batchCustomProperties;\r\n    private Dictionary<string, string> _documentCustomProperties;\r\n    public TestValidationFieldExtractor(List<Field> fields,List<FieldGroup> fieldGroups, Dictionary<string, string> batchCustomProperties, Dictionary<string, string> documentCustomProperties)\r\n    {\r\n        _fields = fields;\r\n        _fieldGroups = fieldGroups;\r\n        _batchCustomProperties = batchCustomProperties;\r\n        _documentCustomProperties = documentCustomProperties;\r\n    }\r\n\r\n    public override bool Validate()\r\n    {\r\n        return _fields.TrueForAll(x =>x.GetFirstFieldValue().Value.All(char.IsUpper));\r\n    }\r\n}",
+    	"oobExecutionDefinition": {
+    		"executeBeforeManualIndexing": true,
+    		"executeWhileManualIndexing": true,
+    		"executeAfterManualIndexing": true,
+    		"executeBeforeManualAssembly": true,
+    		"executeWhileManualAssembly": true,
+    		"executeAfterManualAssembly": true,
+    		"executeWhileQA": true,
+    		"executeAfterQA": true,
+    		"executeBeforeExport": true,
+    		"executeFirst": true
+    	},
+    	"testCases": [
+    		{
+    			"id": "1",
+    			"testCaseFields": [
+    				{
+    					"fieldExternalId": null,
+    					"testCaseValue": "ABC",
+    					"testCaseFieldType": "Input"
+    				},
+    				{
+    					"fieldExternalId": null,
+    					"testCaseValue": "DEF",
+    					"testCaseFieldType": "Input"
+    				}
+    			],
+    			"testCaseFieldGroups": [],
+    			"testCaseInputBatchVariables": [],
+    			"testCaseInputDocumentVariables": []
+    		},
+    		{
+    			"id": "2",
+    			"testCaseFields": [
+    				{
+    					"fieldExternalId": null,
+    					"testCaseValue": "ABC",
+    					"testCaseFieldType": "Input"
+    				},
+    				{
+    					"fieldExternalId": null,
+    					"testCaseValue": "def",
+    					"testCaseFieldType": "Input"
+    				}
+    			],
+    			"testCaseFieldGroups": [],
+    			"testCaseInputBatchVariables": [],
+    			"testCaseInputDocumentVariables": []
+    		}
+    	],
+    	"version": 1,
+    	"id": "de8e806c-28e4-4d97-8308-63b4ed74fdef",
+    	"name": null,
+    	"description": null,
+    	"index": 0,
+    	"properties": {},
+    	"created": 0,
+    	"creator": null,
+    	"modified": null,
+    	"modifier": null,
+    	"deleted": false,
+    	"externalId": null,
+    	"errorList": [],
+    	"origin": null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1700575876476
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

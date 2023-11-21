@@ -1,0 +1,23 @@
+_id: req_3a7d9145f1b740ef86ba7178c763a809
+type: Request
+parentId: fld_016c5c630bfd44eca3a7dcbccaaba94e
+modified: 1689290454761
+created: 1689290410349
+url: http://192.168.0.20:8080/Account/GetUser/1
+name: GetUser
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJpdC5zZXJnaGVpQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3NpZCI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXQuc2VyZ2hlaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY5MTg4MTQzNSwiaXNzIjoiaHR0cHM6Ly9leHBlbnNlc2V0dGxlci5jb20iLCJhdWQiOiJodHRwczovL2V4cGVuc2VzZXR0bGVyLmNvbSJ9.oFd8IQg5XBpv1sNTUoEAXohxxp65DsorcdCUgIJr4ME
+metaSortKey: -1689289682358
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

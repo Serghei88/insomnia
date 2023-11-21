@@ -1,0 +1,79 @@
+_id: req_d525bdd49eff4c59b81c214d61149e9f
+type: Request
+parentId: fld_b01ea9a25a61456982493b80b88883c2
+modified: 1694377316518
+created: 1692737762820
+url: http://192.168.10.10:8086/ChatGPT/fields-extraction
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "layout_ids": [
+       
+        "46aeedba-f7f4-4fbe-bc3f-fd7b440725f3"
+      ],
+      "fields": [
+        {
+          "external_id": "invoice_number",
+          "field_hints": "Please find me invoice number on the form",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "invoice_date",
+          "field_hints": "Please find me invoice date on the form",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "customer_name",
+          "field_hints": "Please find me customer name on the form",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "customer_address",
+          "field_hints": "Please find me customer address on the form",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "invoice_subtotal",
+          "field_hints": "Please find me invoice subtotal on the form",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "invoice_total",
+          "field_hints": "Please find me invoice total on the form ",
+          "type": "Single",
+          "child_fields": []
+        },
+        {
+          "external_id": "invoice_sales_tax",
+          "field_hints": "Please find me invoice sales tax on the form",
+          "type": "Single",
+          "child_fields": []
+        }
+      ],
+      "text": "",
+      "reduced_layouts": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.4
+authentication: {}
+metaSortKey: -1690982785712
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

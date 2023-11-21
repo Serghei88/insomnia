@@ -1,0 +1,28 @@
+_id: req_9942dac2ff9b4d81991a726e5d476cf6
+type: Request
+parentId: fld_5f68f1e316ae4195b42efe5a764bc475
+modified: 1700582062307
+created: 1700575920275
+url: http://localhost:8080/api/console/solutions/сb7485fb-a559-46f8-860f-658d31ee4b4e/document-definition/eaa91572-c628-4936-9b25-523f2b7d810c/field-groups-with-extension?stateType=WORKING
+name: FieldGroupsWithExtensions
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_50f1eb2cd7f1427b90f61f58753e37ff
+  - id: pair_a380701548554372bf416bc6f373c410
+    name: X-NOM-GCD-UID
+    value: test
+    description: ""
+authentication: {}
+metaSortKey: -1700575876426
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_69711c10be4e493dae0129b2cf493b0c
+type: Request
+parentId: wrk_81f4731576e74be1830b60cdde299d08
+modified: 1695157786188
+created: 1694377379057
+url: http://localhost:8080/api/designer/getNormalizationCodeSnippet
+name: New Request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_dc1197c310954b658b86b42f13f5f475
+  - id: pair_b60c00a2d62f4977904cfe9846ca546b
+    name: SESSION
+    value: M2JlMzhhMWQtZDNhNC00OThiLWFkZmMtMzE5MjVkMWUyNDlj
+    description: ""
+  - id: pair_074f770e23b5475e96c805c29f9e76c3
+    name: X-NOM-GCD-UID
+    value: serghei.d
+    description: ""
+authentication: {}
+metaSortKey: -1694377379057
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

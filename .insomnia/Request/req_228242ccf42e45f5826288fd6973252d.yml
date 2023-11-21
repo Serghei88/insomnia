@@ -1,0 +1,29 @@
+_id: req_228242ccf42e45f5826288fd6973252d
+type: Request
+parentId: wrk_81f4731576e74be1830b60cdde299d08
+modified: 1694375956030
+created: 1694292297958
+url: https://api.weatherapi.com/v1/current.json?q=London
+name: WeatherApi
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+    id: pair_076a998454f341c69a3dbde3add708f3
+  - id: pair_94dbcbf8f8494e1ab5cb9bf1b500a5f4
+    name: key
+    value: 710d22934af34694b3a201428230909
+    description: ""
+    disabled: false
+authentication: {}
+metaSortKey: -1694292297958
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

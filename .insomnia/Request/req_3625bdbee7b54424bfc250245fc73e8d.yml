@@ -1,0 +1,26 @@
+_id: req_3625bdbee7b54424bfc250245fc73e8d
+type: Request
+parentId: fld_b01ea9a25a61456982493b80b88883c2
+modified: 1691498493820
+created: 1690982785612
+url: http://localhost:5050/OpenAI/UseChatGPT
+name: UseChatGPT
+description: ""
+method: POST
+body:
+  mimeType: text/plain
+  text: in the sample that you provided - please change the value of the "amount
+    field" to upper case
+parameters: []
+headers:
+  - name: Content-Type
+    value: text/plain
+authentication: {}
+metaSortKey: -1690982785612
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,80 @@
+_id: req_b110ca7060f64009a830589947510a2e
+type: Request
+parentId: fld_b01ea9a25a61456982493b80b88883c2
+modified: 1697473875287
+created: 1697465970135
+url: http://localhost:8099/ChatGPT/fields-extraction
+name: Localhost OpenAi
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"layout_ids": [
+    		"9b3dcb20-43b1-4034-9a92-d5a1ccfa988c",
+    		"32c14641-b2dd-4134-a697-cebcb63fb82a"
+    	],
+    	"fields": [
+    		{
+    			"external_id": "invoice_total",
+    			"field_hints": "Invoice Total. How much need to pay. Required field.",
+    			"type": "Single",
+    			"child_fields": []
+    		},
+    		{
+    			"external_id": "items_table",
+    			"field_hints": "Items table.",
+    			"type": "Group",
+    			"child_fields": [
+    				{
+    					"external_id": "item_name",
+    					"field_hints": "Item name",
+    					"type": "Single",
+    					"child_fields": []
+    				},
+    				{
+    					"external_id": "description",
+    					"field_hints": "description of item",
+    					"type": "Single",
+    					"child_fields": []
+    				},
+    				{
+    					"external_id": "number",
+    					"field_hints": "quantity",
+    					"type": "Single",
+    					"child_fields": []
+    				},
+    				{
+    					"external_id": "price",
+    					"field_hints": "price per unit",
+    					"type": "Single",
+    					"child_fields": []
+    				}
+    			]
+    		},
+    		{
+    			"external_id": "customer_key_value",
+    			"field_hints": "Customer information",
+    			"type": "KeyValuePairs",
+    			"child_fields": []
+    		}
+    	],
+    	"text": "",
+    	"reduced_layouts": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1690982785812
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,86 @@
+_id: req_7e6c3ef91f0b44b78f3122d978937ca9
+type: Request
+parentId: fld_9e6f6a447de8473da975d1e474936b91
+modified: 1698521119247
+created: 1698346310239
+url: http://localhost:8081/api/extractors/ExecuteNormalizationTestCases
+name: ExecuteNormalizationTestCases
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"fieldExternalIds": [],
+    	"fieldGroupExternalIds": [],
+    	"snippetCode": "using System.Collections.Generic;\r\nusing System.Linq;\r\nusing Datum.Rapid.Capture.Common.DomainModel;\r\nusing Datum.Rapid.Capture.Common.DomainModel.Common;\r\nusing Datum.Rapid.Capture.Common.Extensions;\r\n\r\nnamespace LanaCustomBatchExtractor.Tests.TestCodeSnippets;\r\n\r\npublic class TestNormalizationFieldExtractor: NormalizationFieldExtractor\r\n{\r\n    private List<Field> _inputFields;\r\n    private List<Field> _outputFields;\r\n    private List<FieldGroup> _inputFieldGroups;\r\n    private List<FieldGroup> _outputFieldGroups;\r\n    private Dictionary<string, string> _batchCustomProperties;\r\n    private Dictionary<string, string> _documentCustomProperties;\r\n\r\n    public TestNormalizationFieldExtractor(List<Field> inputFields, List<Field> outputFields, \r\n        List<FieldGroup> inputFieldGroups, List<FieldGroup> outputFieldGroups, \r\n        Dictionary<string, string> batchCustomProperties, Dictionary<string, string> documentCustomProperties)\r\n    {\r\n        _inputFields = inputFields;\r\n        _outputFields = outputFields;\r\n        _inputFieldGroups = inputFieldGroups;\r\n        _batchCustomProperties = batchCustomProperties;\r\n        _documentCustomProperties = documentCustomProperties;\r\n        _outputFieldGroups = outputFieldGroups;\r\n    }\r\n\r\n    public override Dictionary<string, string> Normalize()\r\n    {\r\n        _outputFields.ForEach(x =>\r\n        {\r\n            x.GetFirstFieldValue().SetValue(x.GetFirstFieldValue().Value.ToUpper(), \r\n                FieldValueModifierServiceType.MAIN_EXTRACTOR, \r\n                FieldValueChangeEventTypeEnum.AFTER_MA);\r\n        });\r\n\r\n        return _outputFields.ToDictionary(x => x.ExternalId, x => x.GetFirstFieldValue().Value);\r\n    }\r\n}",
+    	"oobExecutionDefinition": {
+    		"executeBeforeManualIndexing": true,
+    		"executeWhileManualIndexing": true,
+    		"executeAfterManualIndexing": true,
+    		"executeBeforeManualAssembly": true,
+    		"executeWhileManualAssembly": true,
+    		"executeAfterManualAssembly": true,
+    		"executeWhileQA": true,
+    		"executeAfterQA": true,
+    		"executeBeforeExport": true,
+    		"executeFirst": true
+    	},
+    	"testCases": [
+    		{
+    			"id": "1",
+    			"testCaseFields": [
+    				{
+    					"fieldExternalId": "2",
+    					"testCaseValue": "abc",
+    					"testCaseFieldType": "Output"
+    				}
+    			],
+    			"testCaseFieldGroups": [],
+    			"testCaseInputBatchVariables": [],
+    			"testCaseInputDocumentVariables": []
+    		},
+    		{
+    			"id": "2",
+    			"testCaseFields": [
+    				{
+    					"fieldExternalId": "3",
+    					"testCaseValue": "def",
+    					"testCaseFieldType": "Output"
+    				}
+    			],
+    			"testCaseFieldGroups": [],
+    			"testCaseInputBatchVariables": [],
+    			"testCaseInputDocumentVariables": []
+    		}
+    	],
+    	"version": 1,
+    	"id": "91e0e62e-4a2e-4a55-8d5e-e2d4becd9975",
+    	"name": null,
+    	"description": null,
+    	"index": 0,
+    	"properties": {},
+    	"created": 0,
+    	"creator": null,
+    	"modified": null,
+    	"modifier": null,
+    	"deleted": false,
+    	"externalId": null,
+    	"errorList": [],
+    	"origin": null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1696361593563
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
